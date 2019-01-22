@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController1" customModule="Swift_Is_Fun__Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="PMh-hC-v2L">
+                                <rect key="frame" x="20" y="332" width="335" height="198"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QP7-RK-C3J">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="33"/>
+                                        <state key="normal" title="Couper Decaler"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbn-Mt-PBM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GQ-6c-gvf">
+                                        <rect key="frame" x="0.0" y="84" width="335" height="40"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="28"/>
+                                        <state key="normal" title="Jazz!!"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Nz-6p-rWW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MP-Gj-L8L">
+                                        <rect key="frame" x="0.0" y="163" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="20"/>
+                                        <state key="normal" title="Hip-Hop/Rap"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfU-uR-7IW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.17032967060000001" blue="0.2979265626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="center" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="GCL-Nc-UZg">
+                                <rect key="frame" x="76" y="568" width="222" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6l-Rb-gGs">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="38"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="26"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" red="1" green="0.17032967060000001" blue="0.2979265626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="StopTappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SqE-ef-0qv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7A-ro-Yaw">
+                                        <rect key="frame" x="164" y="0.0" width="58" height="38"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Next">
+                                                    <attributes>
+                                                        <font key="NSFont" size="26" name="HoeflerText-BlackItalic"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="NextTappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4K5-vt-UiG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.044223673641681671" green="0.012588608078658581" blue="0.039370171725749969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PMh-hC-v2L" secondAttribute="trailing" constant="20" id="40k-Ry-iUP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PMh-hC-v2L" secondAttribute="trailing" constant="20" id="Muy-gJ-hEi"/>
+                            <constraint firstItem="PMh-hC-v2L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="312" id="n0v-Pq-OTg"/>
+                            <constraint firstItem="PMh-hC-v2L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wvE-B6-JVD"/>
+                            <constraint firstItem="PMh-hC-v2L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xzC-Il-gDd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
